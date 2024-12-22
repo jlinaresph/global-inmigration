@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Global Imigration</title>
+    <link rel="stylesheet" href="./assets/servicio.css">
+    <link rel="stylesheet" href="./assets/ws.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="./assets/img/favicon-global.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/Logo.png" alt="Logo de Global Inmigration">
+                </a>
+            </div>
+            
+    
+            <!-- Icono del menú hamburguesa -->
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./somos.html">Quiénes somos</a></li>
+                <li><a href="./servicio.html">Servicios</a></li>
+                <li><a href="./testimonio.html">Testimonios</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <!-- Botón "Síguenos" dentro del menú -->
+                <li>
+                    <a href="https://www.instagram.com/globalinmigration.2018/" class="btn-follow">Síguenos</a>
+                </li>
+            </ul>            
+        </nav>
+    </header>
+    
+    
+
+    <script>
+        // Activar y desactivar el menú hamburguesa
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links'); // Selección por clase
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Activa el menú
+            menuIcon.classList.toggle('open'); // Añade la animación de las barras
+        });
+    </script>
+    
+    <a href="https://api.whatsapp.com/message/55MZQV6EBFD6B1?autoload=1&app_absent=0" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <br></br>
+    <!-- Sección de Inicio -->
+    <section class="hero">
+        <div class="hero-content-custom">
+            <h3>Servicios</h3>
+            <h1>¡TU CAMINO HACIA NUEVAS OPORTUNIDADES COMIENZA AQUÍ!</h1>
+            <div class="extra-text-bottom">
+                En Global Inmigration, ofrecemos asesorías especializadas y soluciones integrales que facilitan tu proceso migratorio. Con nosotros, cada paso hacia tu nueva vida será más sencillo, rápido y seguro. ¡Confía en los expertos para hacer realidad tus sueños migratorios!
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/img/servicionew1.png" alt="Avión y globo representando migración">
+        </div>
+    </section>
+    
+    <section id="nuestros-servicios" class="about-section">
+        <!-- Título y descripción general -->
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-description">
+                En nuestra firma, entendemos que el proceso migratorio puede ser complejo y desafiante. Por eso, ponemos a tu disposición una variedad de servicios diseñados para brindarte el apoyo legal y estratégico que necesitas en cada etapa de tu camino. Desde asesorías iniciales hasta representación en trámites y litigios, nuestro equipo de expertos está comprometido con ofrecer soluciones personalizadas y efectivas. Explora cada uno de nuestros servicios haciendo clic en las opciones disponibles para acceder a información detallada, y descubre cómo podemos ayudarte a alcanzar tus metas con tranquilidad y confianza.
+            </p>
+            <br></br>
+            <br></br>
+            <!-- Contenedor general -->
+            <div class="services-wrapper">
+                <!-- Lista de servicios (lado izquierdo) -->
+                <div class="services-list">
+                    <h2 class="list-title">Nuestros Servicios</h2>
+                    <ul>
+                        <li onclick="showService(1)">Asesoría Legal Migratoria</li>
+                        <li onclick="showService(2)">Obtención de Visas</li>
+                        <li onclick="showService(3)">Traducción de Documentos</li>
+                        <li onclick="showService(4)">Residencia Permanente</li>
+                        <li onclick="showService(5)">Naturalización y Ciudadanía</li>
+                        <li onclick="showService(6)">Permisos de Trabajo</li>
+                        <li onclick="showService(7)">Reunificación Familiar</li>
+                        <li onclick="showService(8)">Representación Legal</li>
+                        <li onclick="showService(9)">Apoyo en Documentación</li>
+                    </ul>
+                </div>
+                <!-- Descripción del servicio (lado derecho) -->
+                <div class="service-detail">
+                    <h3 id="service-title">Selecciona un servicio</h3>
+                    <p id="service-description">Haz clic en un servicio de la lista para ver su descripción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <script>
+        // Información de los servicios
+        const services = {
+            1: {
+                title: "Asesoría Legal Migratoria",
+                description: "Ofrecemos orientación profesional en todos los aspectos legales relacionados con la migración. Nuestro equipo especializado analiza tu situación específica para brindarte las mejores opciones y acompañarte durante todo el proceso, asegurando que cumplas con los requisitos legales en cada etapa."
+            },
+            2: {
+                title: "Obtención de Visas",
+                description: "Te asistimos en la gestión de visas temporales o permanentes, ya sea para estudios, trabajo, turismo o residencia. Nos encargamos de guiarte en la recopilación de documentos necesarios, llenado de formularios y cumplimiento de normativas específicas de cada país."
+            },
+            3: {
+                title: "Traducción de Documentos",
+                description: "Proporcionamos traducción certificada y jurada de documentos esenciales como actas de nacimiento, certificados académicos, contratos laborales y más. Garantizamos la precisión y validez de las traducciones para que sean aceptadas por las autoridades migratorias y otros organismos."
+            },
+            4: {
+                title: "Residencia Permanente",
+                description: "Te guiamos a través de todos los pasos para obtener la residencia permanente en tu país de destino. Analizamos tus circunstancias personales para ayudarte a elegir el programa más adecuado, preparar la documentación requerida y superar posibles obstáculos legales."
+            },
+            5: {
+                title: "Naturalización y Ciudadanía",
+                description: "Te apoyamos en el proceso para convertirte en ciudadano del país que has elegido como tu nuevo hogar. Esto incluye asistencia con exámenes de ciudadanía, entrevistas y preparación de la documentación necesaria, asegurando que cumplas con todos los requisitos legales."
+            },
+            6: {
+                title: "Permisos de Trabajo",
+                description: "Te ayudamos a gestionar permisos de trabajo que te permitan ejercer legalmente tu profesión en otro país. Nos aseguramos de que cumplas con las normativas laborales vigentes y te apoyamos en la obtención de permisos específicos para tu sector o industria."
+            },
+            7: {
+                title: "Reunificación Familiar",
+                description: "Facilitamos el proceso para reunir a tus seres queridos en tu lugar de residencia. Te ayudamos a tramitar visas familiares, permisos especiales y cualquier requisito necesario para garantizar que puedas estar cerca de tu familia, sin complicaciones legales."
+            },
+            8: {
+                title: "Representación Legal",
+                description: "Ofrecemos representación legal en procesos relacionados con migración, ya sea para apelaciones, audiencias o situaciones complejas. Nuestro equipo te protege y defiende tus intereses, asegurando un trato justo en cada procedimiento legal."
+            },
+            9: {
+                title: "Apoyo en Documentación",
+                description: "Te asistimos en la recopilación, preparación y presentación de documentos clave para tus trámites migratorios. Nos aseguramos de que toda la información cumpla con los requisitos oficiales, evitando errores que puedan retrasar o afectar el éxito de tu solicitud."
+            }
+        };
+    
+        // Función para mostrar el servicio seleccionado
+        function showService(serviceId) {
+            const serviceTitle = document.getElementById("service-title");
+            const serviceDescription = document.getElementById("service-description");
+    
+            serviceTitle.textContent = services[serviceId].title;
+            serviceDescription.textContent = services[serviceId].description;
+        }
+    </script>
+    
+
+    <section id="quienes-somos-nuevo" class="about-section">
+        <div class="container">
+            <!-- Título central -->
+            <h2 class="section-title">Tu Socio Estratégico en Migración</h2>
+            <!-- Descripción corta -->
+            <p class="section-description">
+                En Global Inmigration, brindamos asesoría experta y soluciones personalizadas para facilitar tu proceso migratorio. Estamos comprometidos con tu éxito, garantizando un servicio seguro, confiable y adaptado a tus necesidades.
+            </p>
+            <br></br>
+    
+            <!-- Primera fila: VISAS COLOMBIANAS -->
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Visas Colombianas</h3>
+                    <p>
+                        En Colombia existen una gran variedad de visados, los cuales actualmente están siendo regidos legalmente por la Resolución 5477 de 2022, que establece los siguientes lineamientos principales:
+                        <ul>
+                            <li>Es competencia discrecional del Gobierno Nacional autorizar el ingreso, permanencia y salida de extranjeros del territorio nacional.</li>
+                            <li>Todo extranjero que desee permanecer en el territorio colombiano temporal o permanentemente debe optar por un visado.</li>
+                        </ul>
+                        <strong>Tipos de Visas: Visa de visitante (tipo V), visa de migrante (tipo M), visa de residente (tipo R).</strong>
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/img/servicionew12.png" alt="Tipos de visas colombianas">
+                </div>
+            </div>
+    
+            <!-- Segunda fila: TRÁMITES MIGRATORIOS -->
+            <div class="content-wrapper reverse-layout">
+                <div class="image-content">
+                    <img src="assets/img/servicionew13.png" alt="Trámites migratorios">
+                </div>
+                <div class="text-content">
+                    <h3>Trámites Migratorios</h3>
+                    <p>
+                        Los trámites migratorios en Colombia incluyen permisos de ingreso y permanencia, movimientos migratorios, salvoconductos, cédulas de extranjería, prórrogas de permanencia, y mucho más.
+                        También apoyamos en trámites ante el Ministerio de Relaciones Exteriores, como la recuperación de nacionalidad, apostilla y legalización de documentos, entre otros.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Tercera fila: VISAS PARA OTROS PAÍSES -->
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Visas para Otros Países</h3>
+                    <p>
+                        Te apoyamos en la obtención de visas para países como Estados Unidos, Perú, Ecuador, Panamá, República Dominicana, Brasil, China, Costa Rica y Chile. Estamos constantemente ampliando nuestras capacidades para ofrecer asesoramiento en más países.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/img/servicionew14.png" alt="Visas internacionales">
+                </div>
+            </div>
+    
+            <!-- Cuarta fila: TRÁMITES EDUCATIVOS -->
+            <div class="content-wrapper reverse-layout">
+                <div class="image-content">
+                    <img src="assets/img/servicionew15.png" alt="Trámites educativos">
+                </div>
+                <div class="text-content">
+                    <h3>Trámites Educativos</h3>
+                    <p>
+                        Ofrecemos servicios para la convalidación de títulos profesionales de pregrado y posgrado, obtención de tarjetas profesionales, permisos, y legalizaciones necesarias para validar estudios realizados en el exterior.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Quinta fila: ASESORÍA MERCANTIL -->
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Asesoría Mercantil</h3>
+                    <p>
+                        Brindamos apoyo en la constitución e inscripción comercial de sociedades, renovación de matrícula mercantil, redacción de estatutos, inscripción en el RUT, y más para garantizar la correcta operación de empresas en Colombia.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/img/servicionew16.png" alt="Asesoría mercantil">
+                </div>
+            </div>
+    
+            <!-- Sexta fila: ASESORÍA EN TRÁNSITO -->
+            <div class="content-wrapper reverse-layout">
+                <div class="image-content">
+                    <img src="assets/img/servicionew17.png" alt="Asesoría en tránsito">
+                </div>
+                <div class="text-content">
+                    <h3>Asesoría en Tránsito</h3>
+                    <p>
+                        Apoyamos en la expedición, refrendación y recategorización de licencias de conducción, así como en trámites de traspaso de vehículos, duplicado de tarjetas de propiedad, y otros procesos ante el RUNT.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Séptima fila: TRÁMITES LEGALES -->
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h3>Trámites Legales</h3>
+                    <p>
+                        Como centro dirigido por abogados, ofrecemos apoyo en registros de nacionalidad, disolución de sociedades patrimoniales, elaboración de contratos, recursos legales, y representación en notaría, entre otros servicios legales especializados.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="assets/img/servicionew18.png" alt="Trámites legales">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="cta-global" class="founder-section">
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="card-text">
+                    <h3>Tu guía hacia un nuevo comienzo</h3>
+                    <p>
+                        En Global Inmigration, nos dedicamos a hacer de tu proceso migratorio una experiencia segura, confiable y llena de oportunidades. Con el respaldo de nuestra fundadora, María Alejandra Del Moral, hemos ayudado a cientos de personas a lograr sus sueños y construir un nuevo futuro.
+                    </p>
+                    <p>
+                        ¿Estás listo para dar el primer paso? Contáctanos hoy mismo y hagamos realidad el viaje que siempre soñaste.
+                    </p>
+                    <br>
+                    <a href="https://www.instagram.com/globalinmigration.2018/" class="btn-primary">COMENZAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div id="contac">
+            <h2>¡CONTÁCTANOS!</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="mensaje">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" rows="5"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="info">
+            <img src="./assets/img/global-logo-blanco.png" alt="Global Inmigration" class="logob">
+            <h4>Correo Electrónico: consultoria@globalinmigration.com.co</h4>
+            <h4>Teléfono: +57-3223209458</h4>
+            <h4>Dirección: Bogotá, Colombia</h4>
+        
+            <!-- Enlaces a redes sociales -->
+            <a href="https://api.whatsapp.com/message/55MZQV6EBFD6B1?autoload=1&app_absent=0" target="_blank">
+                <img src="./assets/img/ws.png" alt="WhatsApp" class="ico">
+            </a>
+            <a href="https://www.facebook.com/globalinmigration" target="_blank">
+                <img src="./assets/img/fb.png" alt="Facebook" class="ico">
+            </a>
+            <a href="https://www.instagram.com/globalinmigration.2018/" target="_blank">
+                <img src="./assets/img/ig.png" alt="Instagram" class="ico">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Nueva sección con fondo blanco para el copyright -->
+    <section id="footer-copyright">
+        <div class="footer-content">
+            <p>&copy; 2024 Global Inmigration. Todos los derechos reservados. <a href="https://www.instagram.com/graphics.its/" target="_blank">Diseñado por gRaPHic'S</a></p>
+        </div>
+    </section>
+
+</body>
+</html>

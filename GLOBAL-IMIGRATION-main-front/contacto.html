@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | Global Imigration</title>
+    <link rel="stylesheet" href="./assets/contacto.css">
+    <link rel="stylesheet" href="./assets/ws.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="./assets/img/favicon-global.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/Logo.png" alt="Logo de Global Inmigration">
+                </a>
+            </div>
+            
+    
+            <!-- Icono del menú hamburguesa -->
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./somos.html">Quiénes somos</a></li>
+                <li><a href="./servicio.html">Servicios</a></li>
+                <li><a href="./testimonio.html">Testimonios</a></li>
+                <li><a href="./contacto.html">Contáctanos</a></li>
+                <!-- Botón "Síguenos" dentro del menú -->
+                <li>
+                    <a href="https://www.instagram.com/globalinmigration.2018/" class="btn-follow">Síguenos</a>
+                </li>
+            </ul>            
+        </nav>
+    </header>
+    
+    
+
+    <script>
+        // Activar y desactivar el menú hamburguesa
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links'); // Selección por clase
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Activa el menú
+            menuIcon.classList.toggle('open'); // Añade la animación de las barras
+        });
+    </script>
+    
+    <a href="https://api.whatsapp.com/message/55MZQV6EBFD6B1?autoload=1&app_absent=0" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <br></br>
+    <!-- Sección de Inicio -->
+    <section class="hero">
+        <div class="hero-content-custom">
+            <h3>Contáctanos</h3>
+            <h1>¡ESTAMOS AQUÍ PARA AYUDARTE A TRANSFORMAR DESAFÍOS EN SOLUCIONES!</h1>
+            <div class="extra-text-bottom">
+                En Global Inmigration, entendemos que cada paso del proceso migratorio es crucial. Estamos listos para brindarte todo el apoyo necesario para que tu transición sea exitosa, rápida y sin complicaciones. ¡Hablemos y comencemos tu camino hacia nuevas oportunidades!
+            </div>
+        </div>        
+        <div class="hero-image">
+          <img src="assets/img/servicionew7.png" alt="Avión y globo">
+        </div>
+    </section>
+    
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <!-- Título central -->
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-description">
+                Estamos aquí para ayudarte. Ponte en contacto con nosotros a través de los siguientes canales.
+            </p>
+    
+            <!-- Tarjeta de contacto -->
+            <div class="card-wrapper">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Teléfono:</strong> +57 322 320 9458</p>
+                    <p><strong>Email:</strong> consultoria@globalinmigration.com.co</p>
+                    <p><strong>Instagram:</strong> @globalinmigration.2018</p>
+                </div>                
+                <!-- Formulario de contacto -->
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu email" required>
+                        <textarea name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-global" class="founder-section">
+        <div class="container">
+            <div class="card-wrapper">
+                <div class="card-text">
+                    <h3>Tu guía hacia un nuevo comienzo</h3>
+                    <p>
+                        En Global Inmigration, nos dedicamos a hacer de tu proceso migratorio una experiencia segura, confiable y llena de oportunidades. Con el respaldo de nuestra fundadora, María Alejandra Del Moral, hemos ayudado a cientos de personas a lograr sus sueños y construir un nuevo futuro.
+                    </p>
+                    <p>
+                        ¿Estás listo para dar el primer paso? Contáctanos hoy mismo y hagamos realidad el viaje que siempre soñaste.
+                    </p>
+                    <br>
+                    <a href="https://www.instagram.com/globalinmigration.2018/" class="btn-primary">COMENZAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="footer">
+        <div class="info">
+            <img src="./assets/img/global-logo-blanco.png" alt="Global Inmigration" class="logob">
+            <h4>Correo Electrónico: consultoria@globalinmigration.com.co</h4>
+            <h4>Teléfono: +57-3223209458</h4>
+            <h4>Dirección: Bogotá, Colombia</h4>
+    
+            <!-- Enlaces a redes sociales -->
+            <a href="https://api.whatsapp.com/message/55MZQV6EBFD6B1?autoload=1&app_absent=0" target="_blank">
+                <img src="./assets/img/ws.png" alt="WhatsApp" class="ico">
+            </a>
+            <a href="https://www.facebook.com/globalinmigration" target="_blank">
+                <img src="./assets/img/fb.png" alt="Facebook" class="ico">
+            </a>
+            <a href="https://www.instagram.com/globalinmigration.2018/" target="_blank">
+                <img src="./assets/img/ig.png" alt="Instagram" class="ico">
+            </a>
+        </div>
+    </section>
+    
+    <!-- Nueva sección con fondo blanco para el copyright -->
+    <section id="footer-copyright">
+        <div class="footer-content">
+            <p>&copy; 2024 Global Inmigration. Todos los derechos reservados. <a href="https://www.instagram.com/graphics.its/" target="_blank">Diseñado por gRaPHic'S</a></p>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,1557 @@
+@font-face {
+    font-family: "titulos";
+    src: url("./fonts/newtitle/MaximaNouva-Regular-BF66ecec96953e0.otf");
+}
+@font-face {
+    font-family: "parrafos";
+    src: url("../assets/fonts/newtitle/CormorantGaramond-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contac{
+    margin-top: 400px;
+    margin-left: 155px;
+}
+
+/* Navbar fija */
+.navbar {
+    position: fixed; /* Hace que la barra de navegación quede fija en la parte superior */
+    top: 0; /* Fija la posición superior */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Garantiza que esté por encima del resto del contenido */
+    background-color: #ffffff; /* Fondo blanco para mayor claridad */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional para separarla visualmente */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #14325e; /* Color azul oscuro */
+    transition: color 0.3s ease;
+    margin-right: 20px;
+}
+
+#home{
+    display: flex;
+    gap: 450px;
+    margin: 50px 20px 20px 20px;
+}
+
+
+h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    text-align: center;
+    color: #14325e;
+    font-family: "titulos";
+    src: url("./fonts/newtitle/MaximaNouva-Regular-BF66ecec96953e0.otf");
+}
+#home img{
+    width: 400px;
+    height: 400px;
+}
+
+/* Estilos generales */
+
+/* Descripciones */
+p, ul {
+    font-family: "titulos";
+    src: url("./fonts/newtitle/MaximaNouva-Regular-BF66ecec96953e0.otf");
+    color: #ffffff;
+    text-align: justify;
+}
+
+/* Titulos */
+.container {
+    font-family: "parrafos";
+    src: url("../assets/fonts/newtitle/CormorantGaramond-Regular.ttf");
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+
+
+.navbar .logo img {
+    max-height: 50px;
+}
+
+/* Sección Quiénes Somos */
+#quienes-somos {
+    background: url('./img/fondoazul1.svg') no-repeat center center/cover;
+    padding: 600px 0;
+    
+}
+
+
+/* Sección Quiénes Somos imagenes una al lado de la otra*/
+.our-values {
+    text-align: left;
+    padding: 0px;
+    color: white;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.value-item {
+    flex-basis: 20%; /* O ajustar según sea necesario */
+    text-align: center;
+}
+
+.value-item img {
+    max-width: 600px; /* Ajusta el tamaño de las imágenes */
+
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* Resto del código */
+.follow-us {
+    margin-bottom: 40px;
+}
+
+/* Titulos tamaño*/
+.follow-us h2, .about-us h2, .our-values h3, .our-team h3, .our-services h3 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+
+
+.social-links li a {
+    color: #002855;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Descripciones tamaño*/
+.about-us p {
+    max-width: 1500px;
+    margin: left;
+    font-size: 25px;
+}
+
+.our-values, .our-team, .our-services {
+    margin-bottom: 40px;
+}
+
+.our-values ul, .our-services ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.our-team .team-member {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.our-team .team-member strong {
+    color: #ffffff;
+}
+
+/* Estilos para adaptabilidad móvil */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links, .our-values ul, .our-services ul {
+        flex-direction: column;
+    }
+}
+
+
+/* Cartas de los integrantes del equipo */ 
+.our-team {
+    text-align: left;
+    padding: 20px;
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 90px; /* Espacio entre la tarjeta y el texto */
+}
+
+.card1 {
+    width: 290px;
+    height: 404px;
+    background: linear-gradient(10deg, rgb(52, 142, 233) 0%, #002855 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 290px;
+    height: 300px;
+}
+
+.top .title {
+    color: #fff;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 90%;
+}
+
+.card1 .desc {
+    color: #fff;
+    opacity: 75%;
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 10px;
+    margin-top: 2%;
+}
+
+/* Información a la derecha de la tarjeta */
+.team-info {
+    max-width: 500px; /* Ajusta el ancho del texto */
+}
+
+.team-info h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.team-info p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Sección de Nuestros Servicios */ 
+.our-services {
+    text-align: center;
+    padding: 20px;
+    color: #002855;
+}
+
+/* General card container styling */
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card2 {
+    background-color: #f5f5f5;
+    background: linear-gradient(10deg, #ffffff 0%, #ffffff 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.387);
+    padding: 10px 25px;
+    text-align: center;
+    width: 30%; /* Adjust the width for a rectangular shape */
+    height: 215px; /* Set a fixed height */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 45px; /* Esto añade un espacio entre las filas */
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Añade espacio entre las tarjetas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    row-gap: 30px; /* Añade espacio entre las filas de tarjetas */
+}
+
+
+/* Image styling */
+.card2 img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+/* Text styling */
+.card2 p {
+    font-family: "titulos";
+    src: url("./fonts/newtitle/MaximaNouva-Regular-BF66ecec96953e0.otf");
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center; /* Revisar */
+    color: #002855;
+}
+
+/* Hover effect for cards */
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.787);
+}
+
+
+
+/* Boton siguenos */ 
+
+.button {
+    font-family: "titulos";
+    src: url("./fonts/newtitle/MaximaNouva-Regular-BF66ecec96953e0.otf");
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px #002855;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #ffffff;
+    border-radius: 9999px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    color: #002855;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #7e7e7e4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -115px; /* Ajusta la distancia de el fondo azul con el boton */
+  }
+  
+  .icon {
+    width: 1010px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    border-color: rgba(106, 106, 106, 0.6);
+  }
+  
+  .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(108, 108, 108, 0) 30%,
+      rgba(114, 114, 114, 0.8),
+      rgba(131, 131, 131, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+
+  /* Para ser responsive */ 
+  
+  /* Global Settings */
+html {
+    font-size: 16px;
+}
+
+/* Responsive for small devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #home img {
+        width: 80%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .service-box, .team-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsive for tablets and medium devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    #home {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .button {
+        font-size: 22px;
+    }
+}
+
+/* Responsive for larger screens */
+@media (min-width: 1025px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-container {
+        justify-content: space-around;
+        gap: 40px;
+    }
+
+    .button {
+        font-size: 25px;
+    }
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1d3557;
+    margin-top: 70px; /* Asegura que el contenido no quede detrás de la navbar fija */
+
+  }
+  
+  header {
+    background-color: #fff;
+    border-bottom: 2px solid #1d3557;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+  }
+  
+  .follow-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-follow {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #1d3557; /* Fondo azul */
+    color: #fff !important; /* Fuerza el texto blanco */
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .hero-content-custom {
+    flex: 1;
+    padding: 20px;
+}
+  
+  .hero-content-custom h1 {
+    font-size: 2.5em;
+    color: #1d3557;
+    margin: 10px 0;
+  }
+  
+  .hero-content-custom h3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .hero-content-custom p {
+    margin: 15px 0;
+  }
+  
+  .hero-content-custom .btn-primary {
+    padding: 10px 20px;
+    background-color: #1d3557;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hero-content-custom .extra-text-top,
+  .hero-content-custom .extra-text-bottom {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 10px 0;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-us {
+    padding: 200px 40px; /* Reduce el padding global */
+    text-align: justify;
+    color: #ffffff;
+}
+
+.about-us p {
+    margin-bottom: 20px; /* Ajusta la separación entre párrafos */
+    font-size: 20px;
+    line-height: 1.8; /* Ajusta la altura de línea */
+}
+
+/* Estilos generales de la sección */
+.about-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    text-align: center;
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 1000px; /* Limitar ancho para buena lectura */
+    margin: 0 auto;
+}
+
+/* Contenedor del texto e imagen */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Texto alineado a la izquierda */
+.text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.text-content h3 {
+    font-size: 1.8rem;
+    color: #14325e;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Imagen alineada a la derecha */
+.image-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales de la sección */
+.founder-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.founder-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.founder-section .section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos de la tarjeta */
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px; /* Para no dejar el contenido pegado al fondo */
+}
+
+.card-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 15px 15px 0; /* Esquinas redondeadas solo en los lados internos */
+}
+
+.card-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.card-text h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Estilo general del footer */
+#footer {
+    background-color: #1A2E5A; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Sección de formulario de contacto */
+#contac {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+#contac h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+}
+
+#contac form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'Arial', sans-serif;
+}
+
+#contac form input,
+#contac form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contac form input[type="submit"] {
+    background-color: #ffffff;
+    color: #1A2E5A;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contac form input[type="submit"]:hover {
+    background-color: #d1d1d1;
+}
+
+/* Sección de información de contacto */
+.info {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.info h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo principal dentro del footer */
+.logob {
+    width: 500px; /* Tamaño aumentado del logo */
+    margin-bottom: 30px; /* Espaciado adicional debajo del logo */
+}
+
+
+.ico {
+    width: 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Ajuste responsivo */
+@media screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contac {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .info h4, .info img {
+        text-align: center;
+    }
+}
+
+/* Estilos para la sección de valores */
+.values-section {
+    padding: 60px 20px;
+    background-color: #14325e; /* Azul oficial de Global Migration */
+    text-align: center;
+}
+
+.values-section .section-title {
+    font-size: 2.5rem;
+    color: #fff; /* Texto blanco */
+    margin-bottom: 10px;
+}
+
+.values-section .section-description {
+    font-size: 1.2rem;
+    color: #fff; /* Texto blanco */
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.value-card {
+    background: #ffffffad; /* Fondo blanco para contraste */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Ancho fijo */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #14325e; /* Azul oficial */
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #14325e; /* Azul oficial */
+    line-height: 1.6;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal */
+.hero {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre el texto y la imagen */
+    align-items: center;
+    margin: 40px auto; /* Espaciado superior e inferior con centrado */
+    max-width: 1200px; /* Limitar el ancho total de la sección */
+    padding: 0 20px; /* Espaciado interno a los lados */
+}
+
+/* Estilos para el contenido */
+.hero-content-custom {
+    max-width: 50%; /* Ocupa el 50% del ancho disponible */
+    text-align: justify; /* Justifica el texto */
+    padding-right: 20px; /* Espaciado derecho para separar de la imagen */
+}
+
+.hero-content-custom h1 {
+    font-size: 2.5em; /* Ajuste del tamaño del título */
+    color: #1d3557; /* Color del título */
+    text-align: left; /* Justifica el texto */
+    margin: 20px 0; /* Margen para separación superior/inferior */
+}
+
+.hero-content-custom p {
+    font-size: 1em; /* Tamaño del texto del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #333; /* Color gris oscuro para mayor legibilidad */
+    margin: 10px 0; /* Separación entre párrafos */
+}
+
+/* Botón de acción */
+.hero-content-custom .btn-primary {
+    padding: 12px 24px; /* Tamaño del botón */
+    background-color: #1d3557; /* Color azul oscuro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 20px; /* Espaciado superior */
+    cursor: pointer; /* Mano clickeable */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.hero-content-custom .btn-primary:hover {
+    background-color: #457b9d; /* Color más claro al pasar el mouse */
+}
+
+/* Imagen */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Texto de la tarjeta */
+.card-text {
+    text-align: center; /* Centrar todo el contenido, incluido el botón */
+}
+
+.card-text h3 {
+    font-size: 28px; /* Tamaño del título */
+    color: #14325e; /* Color azul oscuro */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    font-size: 16px;
+    color: #14325e; /* Texto azul oscuro */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Solo justificar el texto */
+}
+
+/* Botón */
+.card-text .btn-primary {
+    display: inline-block;
+    background-color: #14325e; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px; /* Botón redondeado */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 10px; /* Espaciado con los elementos superiores */
+}
+
+.card-text .btn-primary:hover {
+    background-color: #0f2a4b; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom leve */
+}
+
+/* Descripción debajo del título */
+.services-description {
+    color: #14325e; /* Azul oficial de Global Migration */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1b3c69; /* Color azul oscuro */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.custom-button:hover {
+    background-color: #13304f; /* Más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+
+#footer-copyright {
+    background-color: #fff;
+    padding: 20px 0;
+    width: 100%;  /* Asegura que la sección ocupe todo el ancho */
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
+}
+
+.footer-content p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;  /* Asegura que el texto esté centrado dentro del contenedor */
+}
+
+.footer-content a {
+    color: #1d3557;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Ajustes generales para mobile de aquí en adelante */
+html {
+    font-size: 16px;
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: row; /* Logo y menú en la misma fila */
+        justify-content: space-between; /* Espacio entre logo y menú */
+        align-items: center;
+        padding: 10px 20px; /* Ajusta los márgenes laterales */
+    }
+
+    .navbar .logo {
+        justify-content: flex-start; /* Alinea el logo a la izquierda */
+        margin-right: auto; /* Empuja el resto del contenido hacia la derecha */
+    }
+
+    .navbar .logo img {
+        /* No se modifica el tamaño del logo */
+        display: block; /* Asegura su visibilidad */
+    }
+
+    /* Icono del menú hamburguesa */
+    .menu-icon {
+        display: flex; /* Asegura que el icono sea visible */
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        position: relative; /* Alineación precisa */
+    }
+
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #14325e; /* Color del menú */
+        margin: 5px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Menú desplegable */
+    .nav-links {
+        display: none; /* Oculta el menú inicialmente */
+    }
+    
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        padding: 10px 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+
+    .nav-links li {
+        margin: 15px 0; /* Espaciado entre los enlaces */
+    }
+
+    .nav-links a {
+        font-size: 18px; /* Tamaño del texto */
+        color: #14325e;
+        text-decoration: none;
+    }
+
+    /* Botón "Síguenos" */
+    .follow-btn {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .btn-follow {
+        padding: 10px 20px;
+        background-color: #14325e; 
+        color: #fff;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .btn-follow:hover {
+        background-color: #1b4079;
+    }
+
+
+    /* Animaciones del icono del menú */
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+}
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* Mostrar el icono del menú hamburguesa */
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+
+    footer {
+        margin: 0; /* Elimina márgenes extra */
+        padding: 20px 15px; /* Espaciado interno (ajústalo si es necesario) */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    }
+}
+
+@media (max-width: 435px) {
+    footer {
+        margin: 0 !important; /* Elimina márgenes conflictivos */
+        font-size: 11px !important; /* Ajusta el tamaño de la fuente */
+        text-align: center !important; /* Centra el contenido */
+        background-color: #f9f9f9; /* Color de fondo claro para pruebas */
+        width: 100% !important; /* Asegura que el footer ocupe todo el ancho */
+        box-sizing: border-box !important; /* Controla el modelo de caja */
+        padding: 5px 8px !important; /* Ajuste de padding más pequeño */
+        max-height: 600px !important; /* Evita que el footer se sobrepase */
+        height: auto !important; /* Altura automática */
+        overflow-x: auto !important; /* Permite desplazamiento horizontal */
+        position: relative; /* Asegura que no se solape con otros elementos */
+        z-index: 10; /* Asegura que el footer se muestre sobre otros elementos */
+    }
+
+    footer p, footer a {
+        font-size: 10px !important; /* Ajusta el tamaño de los enlaces y párrafos */
+        line-height: 1.4; /* Aumenta el espacio entre las líneas de texto */
+        margin: 0 !important; /* Elimina márgenes extra */
+    }
+
+    footer img {
+        max-width: 80px; /* Ajusta el tamaño del logo */
+        height: auto; /* Mantiene la proporción del logo */
+    }
+
+    footer > * {
+        max-width: 100%; /* Asegura que los elementos no se desborden */
+        box-sizing: border-box; /* Controla el modelo de caja para evitar desbordes */
+        margin: 0;
+        padding: 0;
+        word-wrap: break-word; /* Asegura que las palabras no se desborden */
+    }
+
+    footer a {
+        font-size: 10px !important; /* Ajuste del tamaño de los enlaces */
+        margin: 0 !important; /* Evita márgenes sobrantes en los enlaces */
+        display: inline-block; /* Asegura que los enlaces no rompan el flujo */
+    }
+
+    /* Asegura que los contenedores dentro del footer no se desborden */
+    footer .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #footer {
+        font-size: 11px !important;
+        padding: 5px !important; /* Ajuste del padding en pantallas pequeñas */
+    }
+
+    #footer h2, #footer h4 {
+        font-size: 12px; /* Ajuste del tamaño de los encabezados */
+    }
+
+    #footer input[type="submit"] {
+        width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+        padding: 10px;
+    }
+
+    #footer .info img {
+        max-width: 70px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+        height: auto;
+    }
+
+    /* Ajuste del tamaño de los íconos de redes sociales */
+    #footer .ico {
+        width: 30px; /* Ajusta el tamaño de los íconos */
+        height: auto;
+    }
+
+    /* Centrado de los íconos de redes sociales */
+    #footer .info a {
+        display: inline-block;
+        margin: 10px; /* Espacio entre los íconos */
+    }
+
+    /* Centrado para el contenedor de contacto */
+    #footer #contac {
+        text-align: center; /* Centra el texto */
+        margin-bottom: 20px; /* Ajusta el espacio entre el formulario y otros elementos */
+    }
+
+    /* Asegura que el título "¡CONTACTANOS!" esté centrado */
+    #footer #contac h2 {
+        font-size: 30px !important; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        margin: 20px 0;
+        text-align: center; /* Centrado explícito */
+    }
+
+    /* Centrado para la imagen del logo de Global */
+    #footer .info {
+        text-align: center; /* Centra los elementos dentro de este contenedor */
+        margin-top: 10px; /* Ajusta el margen superior si es necesario */
+    }
+
+    /* Asegura que el logo no esté demasiado pequeño */
+    #footer .logob {
+        max-width: 300px !important; /* Aumenta aún más el tamaño máximo del logo */
+        height: auto !important; /* Mantiene la proporción del logo */
+        margin-bottom: 10px !important; /* Ajusta el espacio debajo del logo */
+    }
+
+    
+
+    /* Centrado de los íconos de redes sociales */
+    #footer .info a {
+        display: inline-block;
+        margin: 10px; /* Espacio entre los íconos */
+    }
+}
+
+
+
+
+@media (max-width: 435px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra todo horizontalmente */
+        justify-content: center; /* Centra todo verticalmente */
+        text-align: center; /* Centra el texto */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .hero-content-custom {
+        width: 100%; /* Usa el ancho completo */
+        max-width: 320px; /* Evita que el texto sea demasiado ancho */
+        margin: 0 auto; /* Centra el bloque */
+    }
+
+    .hero-content-custom h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .hero-content-custom h1 {
+        font-size: 24px;
+        line-height: 1.3; /* Espaciado adecuado */
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .extra-text-bottom {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .custom-button {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #14325e;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Estilos para la sección Quienes Somos */
+@media (max-width: 435px) {
+    /* Estilos para la sección Quienes Somos */
+    #quienes-somos-nuevo .container {
+        padding: 20px;
+    }
+
+    /* Título central */
+    #quienes-somos-nuevo .section-title {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Descripción corta */
+    #quienes-somos-nuevo .section-description {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Content Wrapper */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .content-wrapper.reverse-layout {
+        flex-direction: column-reverse;
+    }
+
+    .text-content {
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .text-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .text-content .call-to-action {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .custom-button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Imagen */
+    .image-content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+
+/* Ajustes específicos para móviles (425px y menos) */
+@media (max-width: 435px) {
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Agregar espacio interno */
+        margin: 0 auto; /* Centrar el contenedor */
+    }
+
+    .card-wrapper .card-text {
+        width: 100%; /* Ocupar el ancho completo */
+        max-width: 100%; /* Evita que el texto se recorte */
+        text-align: center; /* Centrar texto */
+        margin: 0; /* Eliminar márgenes negativos */
+        padding: 15px;
+    }
+
+    .card-wrapper .card-text h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-wrapper .card-text p {
+        font-size: 14px;
+        line-height: 1.5; /* Mejor legibilidad */
+        margin-bottom: 10px;
+    }
+
+    .card-wrapper .btn-primary {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px; /* Separar el botón del texto */
+    }
+}
